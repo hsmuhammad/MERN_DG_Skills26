@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box</title>
+    <style>
+        .container {
+            display: flex;
+            background: #ddd;
+            justify-content: center;
+            /* justify-content: flex-start; */
+            /* justify-content: flex-end; */
+            /* justify-content: space-between; */
+            /* justify-content: space-around; */
+            /* justify-content: space-evenly; */
+            
+        }
+        .container_flxCol {
+            margin-top: 20px;
+            background: #ddd;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* align-items: flex-start; */
+            /* align-items: flex-end; */
+        }
+        .box {
+            width: 100px;
+            height: 100px;
+            background: tomato;
+            color: white;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+    </div>
+
+        <div class="container_flxCol">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+    </div>
+    
+</body>
+</html>

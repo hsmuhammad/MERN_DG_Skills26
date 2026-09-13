@@ -1,0 +1,22 @@
+:root {
+    --border: 1px solid black;
+    --radios: 5px;
+    --width: 300px;
+    --height: 400px;
+    --text-color: rgb(255, 0, 47);
+    
+}
+.container {
+    display: flex;
+    gap: 20px;
+    
+}
+.card {
+    --margin: 10px;
+    border: var(--border);
+    border-radius: var(--radios);
+    width: var(--width);
+    height: var(--height);
+    color: var(--text-color);
+    
+}

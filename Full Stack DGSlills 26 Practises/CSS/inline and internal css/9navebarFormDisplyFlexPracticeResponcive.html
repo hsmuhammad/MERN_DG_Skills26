@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar Practice</title>
+    <style>
+        @media (min-width: 768px){
+            .container {
+                display: flex;
+                gap: 20px;
+                justify-content: center;
+                
+
+            }
+            .navbar {
+                display: flex;
+            }
+            .menu {
+                display: flex;
+            }
+            .form {
+                width: 300px;
+            }
+            .perant {
+                width: 400px;
+            }
+            .box3 {
+                width: 400px;
+            }
+
+            }
+            @media (min-width: 1024px) {
+                .container {
+                    max-width: 1200px;
+                    margin: auto;
+                }
+            }
+        * {
+            margin: 0;              /* remove outside spacing */
+            padding: 0;             /* remove inside spacing */
+            box-sizing: border-box; /* width includes padding + border */
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial;
+        }
+        .navbar {
+            padding: 15px 30px;
+            background: #1e3e9e;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+
+        }
+
+
+        .menu {
+            
+            gap: 20px;
+        }
+
+        a {
+            color: white;
+            text-decoration: none; 
+        }
+        .form {
+            padding: 10px;
+            border: 4px solid yellow;
+            /* width: 300px; */
+        }
+        .container {
+            
+            padding: 10px;
+            gap: 10px;
+            /* justify-content: center; */
+            /* align-items: center; */
+        }
+        .perant {
+            position: relative;
+            /* width: 300px; */
+            height: 300px;
+            background: rgb(71, 255, 108);
+            padding: 10px;
+            color: white;
+            border: 4px solid yellow;
+
+        }
+        .child {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: #1e3e9e;
+            width: 100px;
+            height: 100px;
+            justify-content: center;
+            align-items: center;
+
+        }
+        .fix {
+            
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            color: rgb(19, 19, 19);
+            background: yellow;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+                  
+        }
+        .box3 {
+            /* width: 300px; */
+            height: 70vh;
+            background: lightskyblue;
+            border: 4px solid yellow;
+            padding: 10px;
+        }
+        h2 {
+            padding: 0;
+            margin: 0;
+        }
+
+        .fix {
+    width: 50px;
+    height: 50px;
+}
+
+@media (min-width: 768px) {
+    .fix {
+        width: 100px;
+        height: 100px;
+    }
+}   
+    </style>
+</head>
+<body>
+    <header>
+         <div class="navbar">
+        <h2>
+            My practice Navbar
+        </h2>
+        <div class="menu">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+        </div>
+    </div>
+    </header>
+    <div class="container">
+        <div class="form">
+            <h2>form</h2>
+        <form>
+        <label for="name">Name</label> <br />
+        <input type="text" id="name" placeholder="Enter Your Name" required><br /><br />
+        <label for="email">Email</label> <br />
+        <input type="email" id="email" placeholder="Enrer your Email" required ><br /><br />
+        <label for="password">Password</label> <br />
+        <input type="password" id="password" required minlength="8"><br /><br />
+        <label>Gender</label> <br />
+        <input type="radio" name="gender">Male
+        <input type="radio" name="gender">Female <br /><br />
+        <label for="country">country</label> <br />
+        <select id="country">
+            <option>Hijaz</option>
+            <option>Alquds</option>
+            <option>Misr</option>
+
+
+        </select> <br /><br />
+        <label for="address">Address</label> <br />
+        <textarea id="address" placeholder="Enter your Address" required rows="4" cols="30"></textarea><br /><br />
+        <label for="profil">Profile Picture</label><br />
+        <input type="file" id="profil" required><br /><br />
+        <input type="checkbox" required>I accept terms and conditions<br /><br />
+        <input type="submit" value="Register">
+
+
+    </form>
+    </div>
+        <div class="perant"> perant
+            <h2>Ye Box Nmber 3 he</h2>
+            <P>If the container is only 500px wide, the boxes will automatically move to another row when necessary.</P>
+            <div class="child">child</div>
+        </div>
+        <div class="box3">3rd Box
+            <h2>
+                Ye Box Nmber 3 he
+            </h2>
+            <p>
+                If the container is only 500px wide, the boxes will automatically move to another row when necessary.
+            </p>
+        </div>
+    </div>
+    <div class="fix">Fix</div>
+    
+   
+
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+Callbacks
+A callback is a function passed as an argument to another function.
+
+The receiving function decides when to use (call) the callback.
+
+A callback can be called immediately, later, once, or many times.
+
+By themselves, callbacks are neither synchronous nor asynchronous.
+
+They are simply a way to let one function execute another function.
+
+Why Use Callbacks?
+Callbacks make functions more flexible.
+
+The pattern/syntex
+
+function firstFunction() {
+    // code
+}
+
+function secondFunction(parameter) {
+    parameter();
+}
+
+secondFunction(firstFunction);

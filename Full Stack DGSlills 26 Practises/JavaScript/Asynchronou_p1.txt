@@ -1,0 +1,107 @@
+1. Async Programming
+JavaScript executes code one line at a time. Each line must finish before the next line can run.
+
+Asynchronous is how JavaScript can allow some code to run in the background, and let their results be handled when they are ready.
+
+
+2. Async Callbacks
+A callback is a function passed to another function.
+
+In asynchronous JavaScript, callbacks are often used to handle results that are ready later.
+
+A callback is not asynchronous by itself.
+
+Callbacks become part of asynchronous programming when they are used by asynchronous APIs, like setTimeout(), events, or fetch().
+
+
+
+3. Async Promises
+JavaScript Promises were created to make asynchronous JavaScript easier to use.
+
+A Promise object represents the completion or failure of an asynchronous operation.
+
+A Promise can be in one of three exclusive states: pending, rejected or fulfilled.
+
+
+4. Async Await
+The async and await keywords make Promise-based code easier to read.
+
+Behind the scenes, async and await still use Promises.
+
+The async keyword before a function makes the function return a promise.
+
+This is true even if you return a normal value.
+
+If the function returns a value, JavaScript automatically wraps that value in a Promise.
+
+
+5. Async Parallel
+An await statement waits for one Promise before continuing.
+
+If several asynchronous operations do not depend on each other, waiting for them one by one may be slower than necessary.
+
+Instead, you can start all the operations at the same time and wait for them together.
+
+
+6. Async Event Loop
+JavaScript can only execute one piece of code at a time.
+
+While JavaScript is busy, other JavaScript code must wait.
+
+How do JavaScript handle timers, user clicks, downloads, and asynchronous operations?
+
+The answer is the Event Loop.
+
+
+7. Async Fetch
+Modern apps use async code to get data.
+
+fetch() is the modern way to request data from a server.
+
+fetch() is asynchronous and returns a promise.
+
+
+8. Async Mistakes
+Asynchronous programming introduces new concepts:
+
+Callbacks
+Promises
+async/await
+Many beginner mistakes happen because asynchronous code does not always execute in the order you expect.
+
+This chapter describes some of the most common mistakes and how to avoid them.
+
+
+9. Async Debugging
+Asynchronous code can be more difficult to debug than synchronous code.
+
+The code often executes later than expected, and several asynchronous operations may run at the same time.
+
+This chapter shows techniques for finding and fixing common problems in asynchronous JavaScript.
+
+This chapter shows practical ways to debug fetch(), promises, and async/await.
+
+
+10. Async AbortController
+The AbortController Object lets you cancel asynchronous operations.
+
+It is commonly used to cancel fetch() requests.
+
+Canceling unnecessary operations can improve performance and make applications more responsive.
+
+
+11. Async Web Workers
+Asynchronous programming keeps applications responsive while waiting for:
+
+Timers
+User input
+Network requests
+However, long-running calculations can still block the main thread and make a page unresponsive.
+
+Web Workers solve this by running JavaScript in a separate thread.
+
+
+12. Async References
+All Promise Object Methods
+
+Revised February 2026
