@@ -493,3 +493,39 @@ import './App.css';
 
 // export default Aap;
 
+//useState in arrays
+//Add something in Array
+
+// function Aap () {
+//     const [fruites, setFruites] = useState(["Apple", "Mango"]);
+//     return (
+//         <div>
+//             {fruites.map((fruit) => (
+//               <p>{fruit}</p>  
+            
+//             ))}
+
+//             <button onClick={() => setFruites([...fruites, "Orange"])}>Change Frouites</button>
+//         </div>
+//     );
+// }
+
+// export default Aap;
+
+//remove some thing from Array
+
+// function Aap () {
+//     const [fruites, setFruites] = useState(["Apple", "Mango"]);
+//     return (
+//         <div>
+//             {fruites.map((fruit) => (
+//               <p>{fruit}</p>  
+            
+//             ))}
+
+//             <button onClick={() => setFruites(fruites.filter((fruit) => fruit != "Apple"))}>Change Frouites</button>
+//         </div>
+//     );
+// }
+
+// export default Aap;
