@@ -2,6 +2,7 @@
 // import heroImg from './assets/hero.png'
 // import reactLogo from './assets/react.svg'
 // import viteLogo from './assets/vite.svg'
+import { useState } from 'react';
 import './App.css';
 
 
@@ -325,7 +326,7 @@ import './App.css';
 // // export default Student; 
 
 
-//useState:
+//useState Basics:
 // code without useState:
 
 // function Aap(){
@@ -400,20 +401,95 @@ import './App.css';
 // export default Aap;
 
 
-import { useState } from 'react';
+// import { useState } from 'react';
 
-function Aap () {
-const [count, setCount] = useState(0);
+// function Aap () {
+// const [count, setCount] = useState(0);
 
-    return (
-        <>
-        <h1>{count}</h1>
-        <button onClick={() => setCount (count +1)}>+</button>
-        <button onClick={()=> setCount(count - 1)}>-</button>
-        <button onClick={() => setCount(0)}>Reset</button>
-        </>
-    );
+//     return (
+//         <>
+//         <h1>{count}</h1>
+//         <button onClick={() => setCount (count +1)}>+</button>
+//         <button onClick={()=> setCount(count - 1)}>-</button>
+//         <button onClick={() => setCount(0)}>Reset</button>
+//         </>
+//     );
 
-}
+// }
 
-export default Aap;
+// export default Aap;
+
+//State with Objects
+
+// function Aap(){
+
+//     // const [name, setName] = useState ("");
+//     // const [rollNo, setRollNo] = useState("");
+//     // const [age, setAge] = useState(0);
+//     // const [city, setCity] = useState("");  // is ki jaga hm object use kren gy like this:
+
+//     const [student, setStudent] = useState ({  //useState me Object use kia he
+//         name: "Ali",
+//         rollNo: 101,
+//         age: 20,
+//         city: "Lahore",
+//     });
+
+//     return (
+
+//         <div>
+//             <h2>{student.name}</h2>
+//             <p>{student.age}</p>
+//             <p>{student.city}</p>
+//             <button 
+//             onClick={() =>
+//                 setStudent({   //set function se object me changing krni he
+//                     ...student,  //... three dot ne student object ki copy create kr di he.
+//                     city: "Karachi", //city change kr di he
+//                 })
+//             }
+//             >Change City</button>
+//         </div>
+//     );
+
+
+// }
+
+// export default Aap;
+
+//Nested Object
+
+// function Aap () {
+//     const [user, setUser] = useState({
+//         name: "Ali",
+//         address: {                  //ye nested object he
+//             city: "Lahore",
+//             country: "Pakistan",
+//         },
+//     });
+
+//     return (
+//         <div>
+//             <h2>{user.name}</h2>
+//             <p>{user.address.city}</p>
+//             <p>{user.address.country}</p>
+//             <button onClick={() =>
+//                 setUser({
+//                     ...user,
+//                     address:{
+//                         ...user.address,
+//                         city: "Islamabad",
+//                     },
+//                 })
+//             } >Change City
+            
+//             </button>
+
+//         </div>
+//     );
+
+
+// }
+
+// export default Aap;
+
